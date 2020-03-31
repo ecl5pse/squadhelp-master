@@ -27,7 +27,7 @@ class Header extends React.Component {
             return (
                 <>
                     <div className={styles.userInfo}>
-                        <img
+                      <img
                             src={this.props.data.avatar === 'anon.png' ? CONSTANTS.ANONYM_IMAGE_PATH : `${CONSTANTS.publicURL}${this.props.data.avatar}`}
                             alt='user'/>
                         <span>{`Hi, ${this.props.data.displayName}`}</span>
@@ -71,7 +71,7 @@ class Header extends React.Component {
                     <div className={styles.numberContainer}>
                         <img src={`${CONSTANTS.STATIC_IMAGES_PATH}phone.png`}
                              alt='phone'/>
-                        <span>(877)&nbsp;355-3585</span>
+                        <a href="tel:(877)355-3585">(877)355-3585</a>
                     </div>
                     <div className={styles.userButtonsContainer}>
                         {this.renderLoginButtons()}
