@@ -30,26 +30,12 @@ class LoginForm extends React.Component {
                 <form onSubmit={handleSubmit(this.clicked)}>
                     <Field
                         name='email'
-                        classes={{
-                            container: styles.inputContainer,
-                            input: styles.input,
-                            warning: styles.fieldWarning,
-                            notValid: styles.notValid,
-                             valid: styles.valid
-                        }}
                         component={FormInput}
                         type='text'
                         label='Email Address'
                     />
                     <Field
                         name='password'
-                        classes={{
-                            container: styles.inputContainer,
-                            input: styles.input,
-                            warning: styles.fieldWarning,
-                            notValid: styles.notValid,
-                            valid: styles.valid
-                        }}
                         component={FormInput}
                         type='password'
                         label='password'
