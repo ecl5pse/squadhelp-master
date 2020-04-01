@@ -16,7 +16,7 @@ class LoginForm extends React.Component {
         this.props.authClear();
     }
 
-    clicked = (values) => {
+    setClick = (values) => {
         this.props.loginRequest(values);
     };
 
@@ -27,7 +27,7 @@ class LoginForm extends React.Component {
         return (
             <div className={styles.loginForm}>
                 {error && <Error data={error.data} status={error.status} clearError={authClear}/>}
-                <form onSubmit={handleSubmit(this.clicked)}>
+                <form onSubmit={handleSubmit(this.setClick)}>
                     <Field
                         name='email'
                         component={FormInput}
