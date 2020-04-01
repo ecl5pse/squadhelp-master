@@ -12,4 +12,12 @@ const FormInput = (props) => {
     )
 };
 
+FormInput.propTypes = {
+  notValid: PropTypes.string,
+  valid: PropTypes.string,
+  label: PropTypes.string,
+  input: PropTypes.string,
+  type: PropTypes.string,
+
+}
 export default FormInput;
