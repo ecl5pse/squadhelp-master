@@ -20,7 +20,7 @@ const LoginPage = (props) => {
                     </div>
                 </div>
                 <div className={styles.loginFormContainer}>
-                    <LoginForm changeRoute={changeRoute}/>
+                    <LoginForm />
                 </div>
             </div>
         </div>

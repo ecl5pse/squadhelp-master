@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {clearErrorSignUpAndLogin} from '../../actions/actionCreator';
 import CONSTANTS from '../../constants';
+import Article   from '../../components/Article ';
 
 const RegistrationPage = (props) => {
     props.clearError();
@@ -22,9 +23,9 @@ const RegistrationPage = (props) => {
                         <Link to='/login' style={{textDecoration: 'none'}}><span>Login</span></Link>
                     </div>
                 </div>
-                <RegistrationForm changeRoute={changeRoute}/>
+                <RegistrationForm/>
             </div>
-            <div className={styles.footer}>
+ {/*           <div className={styles.footer}>
                 <div className={styles.articlesMainContainer}>
                     <div className={styles.ColumnContainer}>
                         <div className={styles.headerArticle}>Why should I use Squadhelp?</div>
@@ -106,7 +107,8 @@ const RegistrationPage = (props) => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>*/}
+            <Article/>
         </div>
     )
 };
