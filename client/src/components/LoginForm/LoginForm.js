@@ -27,7 +27,6 @@ class LoginForm extends React.Component {
         return (
             <div className={styles.loginForm}>
                 {error && <Error data={error.data} status={error.status} clearError={authClear}/>}
-                <h2>LOGIN TO YOUR ACCOUNT</h2>
                 <form onSubmit={handleSubmit(this.clicked)}>
                     <Field
                         name='email'
