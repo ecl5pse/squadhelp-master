@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  align-self: center;
+  justify-content: center;
+  padding-top: 10px;
+  width: 100%;
+  background: white;
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
+}
+
+  .ColumnContainer {
+    padding: 25px;
+    display: flex;
+    flex-flow: column wrap;
+    align-content:center;
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-width: 900px;
+    height: 600px;
+
+  }
+
+.headerArticle {
+      font-size: 16px;
+      font-weight: 500;
+      color: #363945;
+    }
+    .article {
+      color: #9ca8b7;
+      min-height: 200px;
+      text-align: left;
+      width: 500px;
+      line-height: 30px;
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
