@@ -1,30 +1,22 @@
-import React from 'react';
-import  data  from './data'
-import styles from './Aricle.module.scss'
+import React  from 'react';
+import data   from './data';
+import styles from './Aricle.module.scss';
 
-class Article extends React.Component {
-  constructor(props) {
-    super();
-    this.state = {
-      items: data.map(data => ({...data})),
-    };
-  }
+const items = data.map(data => ({...data}));
 
-  render() {
-    const {items} = this.state;
-    return (
-        <article className={styles.container}>
-          {
-            items.map(data => (
-                <div key={data.id} className={styles.ColumnContainer}>
-                  <h1 className={styles.headerArticle}>{data.title}</h1>
-                  <p className={styles.article}>{data.body}</p>
-                </div>
-            ))
-          }
-        </article>
-    );
+const Article = props => {
 
-  }
-}
-export default Article
+  return (
+      <article className={styles.container}>
+        {
+          items.map(texts => (
+              <div key={texts.id} className={styles.ColumnContainer}>
+                <h1 className={styles.headerArticle}>{texts.title}</h1>
+                <p className={styles.article}>{texts.body}</p>
+              </div>
+          ))
+        }
+      </article>
+  );
+};
+export default Article;
