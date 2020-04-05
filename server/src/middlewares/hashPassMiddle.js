@@ -1,4 +1,4 @@
-const CONSTANTS = require('../constants');
+const CONSTANTS = require('../constans /constants');
 const ServerError = require('../errors/ServerError');
 const bcrypt = require('bcrypt');
 

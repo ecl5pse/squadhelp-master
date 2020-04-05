@@ -1,5 +1,5 @@
 const WebSocket = require('./WebSocket');
-const CONSTANTS = require('../../constants');
+const CONSTANTS = require('../../constans /constants');
 
 class ChatController extends WebSocket{
 

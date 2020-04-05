@@ -3,10 +3,10 @@ import ServerError from '../errors/ServerError';
 
 const contestQueries = require('./queries/contestQueries');
 const userQueries = require('./queries/userQueries');
-const controller = require('../socketInit');
+const controller = require('../configServer/socket');
 const UtilFunctions = require('../utils/functions');
 const NotFound = require('../errors/UserNotFoundError');
-const CONSTANTS = require('../constants');
+const CONSTANTS = require('../constans /constants');
 
 module.exports.dataForContest = async (req, res, next) => {
   let response = {};

@@ -1,4 +1,4 @@
-const CONSTANTS = require('../../constants');
+const CONSTANTS = require('../../constans /constants');
 
 class WebSocket{
   connect (namespace, io) {
